@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Londrina Solid', system-ui, sans-serif;
+  }
+}
+
+.glasses-card {
+  @apply relative transition-all duration-500 hover:scale-105;
+  perspective: 1000px;
+}
+
+.glasses-frame {
+  @apply rounded-lg p-6 shadow-2xl;
+  transform-style: preserve-3d;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.glasses-card:hover .glasses-frame {
+  transform: rotateY(10deg) translateZ(20px);
+  box-shadow: -20px 20px 40px rgba(0, 0, 0, 0.2),
+              0 0 0 2px theme('colors.red.500');
+}
+
+.glasses-card:hover .card-image {
+  transform: scale(1.1) translateZ(10px);
+}
+
+.card-image {
+  @apply transition-all duration-500;
+  transform-style: preserve-3d;
+}
+
+.moment-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.moment-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lens-effect {
+  @apply absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300;
+  backdrop-filter: blur(2px);
+}
+
+.glasses-card:hover .lens-effect {
+  opacity: 1;
+}
+
+.decorative-glasses {
+  @apply absolute left-1/2 -translate-x-1/2 w-32 h-32 pointer-events-none;
+  z-index: 1;
+}
+
+.glasses-bridge {
+  @apply absolute h-8 bg-red-500;
+  width: calc(100% + 3rem);
+  top: 50%;
+  left: calc(100% - 1.5rem);
+  transform: translateY(-50%);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.glasses-left {
+  @apply z-10;
+}
+
+.glasses-right {
+  @apply z-20;
+}
