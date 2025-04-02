@@ -13,6 +13,7 @@ import { NaImage } from "./components/NaImage";
 import { CpImage } from "./components/CpImage";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
+import { Evidencias } from "./components/Evidencias";
 
 interface Moment {
   id: number;
@@ -29,7 +30,7 @@ const moments: Moment[] = [
     title: "Taller con niñas y niños de Matinée en el Faro",
     description: "Introducción lúdica al mundo de Nouns",
     image:
-      "https://images.unsplash.com/photo-1560932684-5e552e2894e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "/src/img/1.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `A partir del grupo de 123 niños y niñas que conforman el grupo de Matinée del barrio El Faro, comuna 8 de Medellín, se llevó a cabo el día sábado 8 de febrero el taller # 1, que incluyó:
 
@@ -45,8 +46,7 @@ const moments: Moment[] = [
     id: 2,
     title: "Taller con niñas y niños de Matinée en Platohedro",
     description: "Exploración de dispositivos móviles y gobernanza descentralizada",
-    image:
-      "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/src/img/2.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `Contando con la participación de (# de niños y niñas), se llevó a cabo el taller # 2 con los niños y niñas integrantes del grupo Matinée del barrio Buenos Aires, Comuna 9 de Medellín el día 15 de marzo. En este caso niños y niñas exploraron el uso de dispositivos móviles y tuvieron un acercamiento a los conceptos de Gobernanza descentralizada:
 
@@ -63,7 +63,7 @@ const moments: Moment[] = [
     title: "Taller con Amapolas (Mujeres jóvenes)",
     description: "Empoderamiento en finanzas descentralizadas",
     image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "/src/img/3.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `Con madres y mujeres cabezas de hogar de las comunas 8 y 9 de Medellín, llevamos a cabo el día 7 de febrero, un encuentro centrado en reconocer las finanzas descentralizadas e introducir a las participantes en los principales conceptos y formas de las comunidades descentralizadas:
 
@@ -80,7 +80,7 @@ const moments: Moment[] = [
     title: "Taller con Ideatorio (Adolescentes del Faro)",
     description: "Onboarding en Web3 para jóvenes",
     image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "/src/img/4.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `El día 14 de marzo nos reunimos con jóvenes y adolescentes del grupo Ideatorio del barrio El Faro, Comuna 8 de Medellín. Con este grupo generamos un proceso de introducción centrado en el recorrido histórico de las transformaciones que ha tenido el dinero, hasta llegar a las finanzas descentralizadas, abriendo paso para generar un proceso onboarding en Web3.
 
@@ -114,36 +114,36 @@ function DynamicMomentPage() {
           <span>⌐◨-◨ Volver al inicio</span>
         </Link>
         <div
-          className={`${moment.color} rounded-lg p-8 shadow-xl border-2 border-red-500 relative`}
+          className={`${moment.color} rounded-lg p-3 md:p-8 shadow-xl border-2 border-red-500 relative`}
         >
-          <NaImage className="absolute -top-10 -right-8 w-24 h-24 transform rotate-12 opacity-20" />
-          <CpImage className="absolute -bottom-8 -left-10 w-28 h-28 transform -rotate-6 opacity-20" />
+          <NaImage className="absolute -top-10 -right-8 w-12 md:w-24 h-12 md:h-24 transform rotate-12 opacity-20" />
+          <CpImage className="absolute -bottom-8 -left-10 w-16 md:w-28 h-16 md:h-28 transform -rotate-6 opacity-20" />
           <img
             src={moment.image}
             alt={moment.title}
-            className="w-full h-64 object-cover rounded-lg mb-6"
+            className="w-full h-40 md:h-64 object-cover rounded-lg mb-3 md:mb-6"
           />
-          <h1 className="text-4xl font-bold mb-4 theme-text force-black dark:force-white">{moment.title}</h1>
-          <p className="text-xl mb-6 theme-text force-black dark:force-white">{moment.description}</p>
-          <div className="prose prose-2xl max-w-none theme-text">
+          <h1 className="text-lg md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4 theme-text force-black dark:force-white">{moment.title}</h1>
+          <p className="text-sm md:text-xl lg:text-2xl mb-3 md:mb-6 theme-text force-black dark:force-white">{moment.description}</p>
+          <div className="prose prose-xs md:prose-base lg:prose-lg max-w-none theme-text">
             <div 
-              className="text-2xl lg:text-3xl force-black dark:force-white"
+              className="text-xs md:text-base lg:text-xl force-black dark:force-white"
               dangerouslySetInnerHTML={{ 
                 __html: moment.content
                   .split('\n\n')
                   .map(paragraph => {
                     if (paragraph.startsWith('•')) {
                       const items = paragraph.split('\n');
-                      return `<ul class="space-y-4">${items.map(item => {
+                      return `<ul class="space-y-2 md:space-y-4">${items.map(item => {
                         if (item.startsWith('  ○')) {
-                          return `<li class="ml-8 mt-2">${item.replace('  ○', '')}</li>`;
+                          return `<li class="ml-4 md:ml-8 mt-1 md:mt-2">${item.replace('  ○', '')}</li>`;
                         } else if (item.startsWith('•')) {
                           return `<li class="font-medium">${item.replace('•', '')}</li>`;
                         }
                         return item;
                       }).join('')}</ul>`;
                     }
-                    return `<p class="mb-6">${paragraph}</p>`;
+                    return `<p class="mb-3 md:mb-6">${paragraph}</p>`;
                   })
                   .join('\n')
               }}
@@ -220,6 +220,14 @@ function Home() {
               Platohedro X Nouns Amigos
             </h1>
           </div>
+          <nav className="flex items-center gap-6">
+            <Link 
+              to="/evidencias" 
+              className="px-4 py-2 text-base md:text-lg rounded-lg border-2 border-red-500 bg-white dark:bg-gray-900 text-red-500 hover:bg-red-500 hover:text-white dark:hover:text-white transition-all duration-300 font-medium shadow-md hover:shadow-lg"
+            >
+              Evidencias
+            </Link>
+          </nav>
         </div>
       </header>
 
@@ -234,11 +242,11 @@ function Home() {
           <h2 className="text-4xl font-bold mb-6 theme-text force-black dark:force-white">
             <span className="text-red-500">⌐◨-◨</span> Nouns Amigos en el Faro
           </h2>
-          <div className="prose prose-2xl max-w-3xl mx-auto relative theme-text w-full px-4">
+          <div className="prose prose-base md:prose-lg lg:prose-xl max-w-3xl mx-auto relative theme-text w-full px-4">
             <NaImage className="absolute -left-16 top-1/2 w-20 h-20 transform -rotate-12 opacity-15" />
             <CpImage className="absolute -right-16 bottom-0 w-24 h-24 transform rotate-12 opacity-15" />
             <div 
-              className="text-3xl lg:text-4xl force-black dark:force-white whitespace-pre-line"
+              className="text-base md:text-xl lg:text-2xl force-black dark:force-white whitespace-pre-line"
               dangerouslySetInnerHTML={{ 
                 __html: `En el marco del proyecto Nouns Amigos - Platohedro, transformando
               comunidades en El Faro, se han generado procesos de adecuación
@@ -337,6 +345,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/momento/:id" element={<DynamicMomentPage />} />
+          <Route path="/evidencias" element={<Evidencias />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
