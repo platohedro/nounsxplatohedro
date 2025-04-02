@@ -4,6 +4,162 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base theme variables */
+:root {
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --background-primary: #ffffff;
+}
+
+/* Dark theme overrides */
+.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --background-primary: #1a1a1a;
+}
+
+/* Global text color classes */
+.theme-text {
+  color: var(--text-primary) !important;
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+/* Force proper text colors in light/dark modes */
+html:not(.dark) .force-black {
+  color: #000000 !important;
+}
+
+html.dark .force-white {
+  color: #ffffff !important;
+}
+
+/* Prose overrides for dark mode */
+.dark .prose {
+  color: var(--text-primary);
+}
+
+.dark .prose p,
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+  color: var(--text-primary) !important;
+}
+
+/* Content formatting */
+.prose {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.prose ul li {
+  position: relative;
+  padding-left: 3em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  font-size: 1.75rem;
+  line-height: 1.8;
+}
+
+.prose ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: currentColor;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.prose ul li.ml-8 {
+  margin-left: 4em;
+  padding-left: 2em;
+}
+
+.prose ul li.ml-8:before {
+  content: "○";
+  font-size: 1.75em;
+}
+
+.prose p {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  font-size: 1.75rem;
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+.prose .space-y-4 > * + * {
+  margin-top: 2rem;
+}
+
+/* Responsive text sizing */
+@media (min-width: 1024px) {
+  .prose p,
+  .prose ul li {
+    font-size: 2rem;
+    line-height: 1.9;
+  }
+  
+  .prose ul li:before {
+    font-size: 2.25em;
+  }
+  
+  .prose ul li.ml-8:before {
+    font-size: 2em;
+  }
+}
+
+/* Bullet points styling */
+.prose .whitespace-pre-line {
+  white-space: pre-line;
+}
+
+.prose .whitespace-pre-line br {
+  margin-bottom: 0.5em;
+}
+
+/* Base styles */
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .bg-gray-50 {
+  background-color: #111827;
+}
+
+.dark .bg-white\/80 {
+  background-color: rgba(17, 24, 39, 0.8);
+}
+
+.dark .border-red-500 {
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+.dark .text-red-500 {
+  color: rgba(239, 68, 68, 0.9);
+}
+
+.dark .hover\:text-red-400:hover {
+  color: rgba(248, 113, 113, 0.9);
+}
+
 @layer base {
   html {
     font-family: 'Londrina Solid', system-ui, sans-serif;
