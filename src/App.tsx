@@ -103,6 +103,55 @@ function DynamicMomentPage() {
     return <Navigate to="/" replace />;
   }
 
+  // Galería de imágenes para todos los momentos
+  let galleryImages: string[] = [];
+  
+  // Cada momento usa las mismas imágenes de muestra para la galería
+  switch(moment.id) {
+    case 1:
+      galleryImages = [
+        "/src/img/4.jpg",
+        "/src/img/3.jpg",
+        "/src/img/2.jpg",
+        "/src/img/1.jpg",
+        "/src/img/4.jpg",
+        "/src/img/2.jpg",
+      ];
+      break;
+    case 2:
+      galleryImages = [
+        "/src/img/2.jpg",
+        "/src/img/1.jpg",
+        "/src/img/4.jpg",
+        "/src/img/3.jpg",
+        "/src/img/2.jpg",
+        "/src/img/1.jpg",
+      ];
+      break;
+    case 3:
+      galleryImages = [
+        "/src/img/3.jpg",
+        "/src/img/2.jpg",
+        "/src/img/1.jpg",
+        "/src/img/4.jpg",
+        "/src/img/3.jpg",
+        "/src/img/2.jpg",
+      ];
+      break;
+    case 4:
+      galleryImages = [
+        "/src/img/1.jpg",
+        "/src/img/4.jpg",
+        "/src/img/3.jpg",
+        "/src/img/2.jpg",
+        "/src/img/1.jpg",
+        "/src/img/4.jpg",
+      ];
+      break;
+    default:
+      galleryImages = [];
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 py-12 px-8 relative overflow-hidden">
       <div className="container max-w-[95%] mx-auto relative z-10">
@@ -148,6 +197,24 @@ function DynamicMomentPage() {
                   .join('\n')
               }}
             />
+            
+            {/* Galería de imágenes para todos los momentos */}
+            {galleryImages.length > 0 && (
+              <div className="mt-8 space-y-4">
+                <h3 className="text-lg md:text-2xl font-bold theme-text force-black dark:force-white">Galería de imágenes</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {galleryImages.map((img, index) => (
+                    <div key={index} className="overflow-hidden rounded-lg border-2 border-red-500 shadow-md hover:shadow-lg transition-all duration-300">
+                      <img 
+                        src={img} 
+                        alt={`Imagen ${index + 1} del ${moment.title}`} 
+                        className="w-full h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

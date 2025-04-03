@@ -9,10 +9,10 @@ export const Evidencias = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <Link 
             to="/" 
-            className="inline-flex items-center text-red-500 hover:text-red-600 transition-colors"
+            className="inline-flex items-center text-red-500 hover:text-red-600 transition-colors text-lg"
           >
             <span className="text-lg mr-1">⌐◨-◨</span>
-            <span className="text-gray-900 dark:text-white text-base">Inicio</span>
+            <span className="text-gray-900 dark:text-white text-lg">Inicio</span>
           </Link>
           <div className="flex items-center">
             <ThemeSwitcher />
@@ -29,13 +29,13 @@ export const Evidencias = () => {
           
           {/* Add padding and background to content to separate from images */}
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-4xl font-bold mb-8 md:mb-10 theme-text force-black dark:force-white text-center">
+            <h1 className="text-2xl md:text-4xl font-bold mb-8 md:mb-10 theme-text force-black dark:force-white text-center">
               <span className="text-red-500">⌐◨-◨</span> Evidencias y documentación
-            </h2>
+            </h1>
             
             <div className="max-w-none mx-auto relative w-full px-6 md:px-8 md:pl-12">
               {/* Text container without prose classes */}
-              <div className="text-base md:text-lg mb-12">
+              <div className="text-lg mb-12">
                 <p className="theme-text force-black dark:force-white mb-6">
                   Se han generado registros audiovisuales y publicaciones en redes sociales y la página web
                   de <strong className="text-red-500">Platohedro</strong> para documentar y difundir los aprendizajes de estos talleres.
@@ -53,71 +53,71 @@ export const Evidencias = () => {
                   <table className="min-w-full border-[3px] border-red-500">
                     <thead className="bg-red-500 text-white">
                       <tr>
-                        <th className="px-6 py-4 text-left font-medium">Actividades</th>
-                        <th className="px-6 py-4 text-left font-medium">Fechas</th>
-                        <th className="px-6 py-4 text-left font-medium">Enlaces</th>
+                        <th className="px-6 py-4 text-left font-medium text-lg">Actividades</th>
+                        <th className="px-6 py-4 text-left font-medium text-lg">Fechas</th>
+                        <th className="px-6 py-4 text-left font-medium text-lg">Enlaces</th>
                       </tr>
                     </thead>
                     <tbody className="bg-white/95 dark:bg-gray-900/95">
                       <tr className="border-b border-red-200 dark:border-red-800">
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">Taller Matinée barrio El Faro</td>
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">sábado 8 de febrero</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">Taller Matinée barrio El Faro</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">sábado 8 de febrero</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Videos</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
                       <tr className="border-b border-red-200 dark:border-red-800">
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">Taller Matinée barrio Buenos Aires</td>
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">sábado 15 de marzo</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">Taller Matinée barrio Buenos Aires</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">sábado 15 de marzo</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Videos</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
                       <tr className="border-b border-red-200 dark:border-red-800">
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">Taller Amapolas barrio El Faro</td>
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">viernes 7 de febrero</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">Taller Amapolas barrio El Faro</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">viernes 7 de febrero</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Videos</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
                       <tr className="border-b border-red-200 dark:border-red-800">
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">Taller Ideatorio barrio El Faro</td>
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">viernes 14 de marzo</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">Taller Ideatorio barrio El Faro</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">viernes 14 de marzo</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Videos</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 text-gray-900 dark:text-white">Promoción y difusión de actividades a través de redes sociales</td>
+                        <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">Promoción y difusión de actividades a través de redes sociales</td>
                         <td className="px-6 py-4"></td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-4">
                             <div>
-                              <div className="font-medium mb-2 text-gray-900 dark:text-white">Instagram:</div>
+                              <div className="font-medium mb-2 text-gray-900 dark:text-white text-lg">Instagram:</div>
                               <div className="flex flex-col gap-2 ml-3">
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 1</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 2</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 3</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
                               </div>
                             </div>
                             <div>
-                              <div className="font-medium mb-2 text-gray-900 dark:text-white">Facebook:</div>
+                              <div className="font-medium mb-2 text-gray-900 dark:text-white text-lg">Facebook:</div>
                               <div className="flex flex-col gap-2 ml-3">
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 1</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 2</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300">Link 3</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
+                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
                               </div>
                             </div>
                           </div>
@@ -134,10 +134,10 @@ export const Evidencias = () => {
         {/* Infrastructure and Conclusion Sections */}
         <div className="max-w-none mx-auto px-6 md:px-8 md:pl-12 mb-16">
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 theme-text force-black dark:force-white">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 theme-text force-black dark:force-white">
               <span className="text-red-500">⌐◨-◨</span> Avances en Infraestructura
             </h2>
-            <div className="text-base md:text-lg space-y-6">
+            <div className="text-lg space-y-6">
               <p className="theme-text force-black dark:force-white">
                 Además de las sesiones formativas, se han realizado avances importantes en la mejora de la sede del Faro:
               </p>
@@ -153,10 +153,10 @@ export const Evidencias = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-6 theme-text force-black dark:force-white">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 theme-text force-black dark:force-white">
               <span className="text-red-500">⌐◨-◨</span> Conclusión y próximos pasos
             </h2>
-            <div className="text-base md:text-lg space-y-4">
+            <div className="text-lg space-y-4">
               <p className="theme-text force-black dark:force-white">
                 Las sesiones formativas han sido un paso fundamental en la construcción de una comunidad más consciente y autónoma en el uso de herramientas descentralizadas. Cada grupo ha avanzado a su ritmo, y el trabajo continuará en futuras sesiones para fortalecer estos conocimientos.
               </p>
