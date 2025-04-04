@@ -110,42 +110,47 @@ function DynamicMomentPage() {
   switch(moment.id) {
     case 1:
       galleryImages = [
-        "/src/img/4.jpg",
-        "/src/img/3.jpg",
-        "/src/img/2.jpg",
-        "/src/img/1.jpg",
-        "/src/img/4.jpg",
-        "/src/img/2.jpg",
+        "/src/img/momento1/1.jpg",
+        "/src/img/momento1/2.jpg",
+        "/src/img/momento1/3.jpg",
+        "/src/img/momento1/4.jpg",
+        "/src/img/momento1/5.jpg",
+        "/src/img/momento1/6.jpg",
+        "/src/img/momento1/7.jpg",
+        "/src/img/momento1/8.jpg",
+        "/src/img/momento1/9.jpg",
       ];
       break;
     case 2:
       galleryImages = [
-        "/src/img/2.jpg",
-        "/src/img/1.jpg",
-        "/src/img/4.jpg",
-        "/src/img/3.jpg",
-        "/src/img/2.jpg",
-        "/src/img/1.jpg",
+        "/src/img/momento2/1.jpg",
+        "/src/img/momento2/2.jpg",
+        "/src/img/momento2/3.jpg",
+        "/src/img/momento2/4.jpg",
+        "/src/img/momento2/5.jpg",
+        "/src/img/momento2/6.jpg",
+        "/src/img/momento2/7.jpg",
       ];
       break;
     case 3:
       galleryImages = [
-        "/src/img/3.jpg",
-        "/src/img/2.jpg",
-        "/src/img/1.jpg",
-        "/src/img/4.jpg",
-        "/src/img/3.jpg",
-        "/src/img/2.jpg",
+        "/src/img/momento3/1.jpg",
+        "/src/img/momento3/2.jpg",
+        "/src/img/momento3/3.jpg",
+        "/src/img/momento3/4.jpg",
+        "/src/img/momento3/5.jpg",
+        "/src/img/momento3/13.jpg",
+        "/src/img/momento3/12.jpg",
+        "/src/img/momento3/11.jpg",
+        "/src/img/momento3/10.jpg",
       ];
       break;
     case 4:
       galleryImages = [
-        "/src/img/1.jpg",
-        "/src/img/4.jpg",
-        "/src/img/3.jpg",
-        "/src/img/2.jpg",
-        "/src/img/1.jpg",
-        "/src/img/4.jpg",
+        "/src/img/momento4/1.jpg",
+        "/src/img/momento4/2.jpg",
+        "/src/img/momento4/3.jpg",
+   
       ];
       break;
     default:

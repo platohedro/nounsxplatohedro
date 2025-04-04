@@ -64,8 +64,8 @@ export const Evidencias = () => {
                         <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">sábado 8 de febrero</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
+                            <a href="https://drive.google.com/drive/folders/1-IqgSU_w0DVk6nTFfjpZBskzTMPLDRIu?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="https://drive.google.com/drive/folders/1YFkWwiu--1_BwDO3pw4nBfnKUUO49XmI?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
@@ -74,8 +74,8 @@ export const Evidencias = () => {
                         <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">sábado 15 de marzo</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
+                            <a href="https://drive.google.com/drive/folders/1yOJ3kGyzuFWYjQ5-Xg9V9RSMyJ1vBHmb?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="https://drive.google.com/drive/folders/1kSo3wX_rpWgVO4SnpcyXQA5gCiOaLcmt?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
@@ -84,8 +84,8 @@ export const Evidencias = () => {
                         <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">viernes 7 de febrero</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
+                            <a href="https://drive.google.com/drive/folders/1ZP4KXe5OVZFSMY4jLYbDxm7Vv8wPDm0O?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="https://drive.google.com/drive/folders/1CqnaO2pAmjFB_T33bVY-eg_NhPl4vYUp?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
@@ -94,8 +94,8 @@ export const Evidencias = () => {
                         <td className="px-6 py-4 text-gray-900 dark:text-white text-lg">viernes 14 de marzo</td>
                         <td className="px-6 py-4">
                           <div className="flex flex-col gap-2">
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
-                            <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
+                            <a href="https://drive.google.com/drive/folders/1OQ-RkvzWjhggVvhd5ESbiHjSiD2r4HZf?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Fotografías</a>
+                            <a href="https://drive.google.com/drive/folders/1XkVLq9DjQDfAKbmD7weAVpl-n5LKgFX8?usp=drive_link" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Videos</a>
                           </div>
                         </td>
                       </tr>
@@ -107,17 +107,17 @@ export const Evidencias = () => {
                             <div>
                               <div className="font-medium mb-2 text-gray-900 dark:text-white text-lg">Instagram:</div>
                               <div className="flex flex-col gap-2 ml-3">
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
+                                <a href="https://www.instagram.com/reel/DGTkAcDROKV/" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
+                                <a href="https://www.instagram.com/reel/DHWsNxXhz-f/" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
+                                <a href="https://www.instagram.com/reel/DHbYdKigcpi/" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
                               </div>
                             </div>
                             <div>
                               <div className="font-medium mb-2 text-gray-900 dark:text-white text-lg">Facebook:</div>
                               <div className="flex flex-col gap-2 ml-3">
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
-                                <a href="#" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
+                                <a href="https://www.facebook.com/reel/2985943291581859" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 1</a>
+                                <a href="https://www.facebook.com/reel/990415859724541" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 2</a>
+                                <a href="https://www.facebook.com/reel/2077068706129377" className="text-red-500 hover:text-red-600 dark:text-red-400 dark:hover:text-red-300 text-lg">Link 3</a>
                               </div>
                             </div>
                           </div>
