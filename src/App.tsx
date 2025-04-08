@@ -360,7 +360,7 @@ function Home() {
           </div>
           {/* Ejemplo de imagen centrada entre párrafos */}
           <div className="flex justify-center my-8">
-                <img src="/src/img/34.jpg" alt="Descripción de la imagen" className="max-w-[40%] h-auto rounded-lg shadow-lg justify-center" />
+                <img src="https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/34.jpg" alt="Descripción de la imagen" className="max-w-[40%] h-auto rounded-lg shadow-lg justify-center" />
               </div>
         </div>
         <div className="py-16">
