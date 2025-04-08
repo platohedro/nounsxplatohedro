@@ -14,6 +14,8 @@ import { CpImage } from "./components/CpImage";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { Evidencias } from "./components/Evidencias";
+import VideoSection from "./components/VideoSection";
+import Footer from "./components/Footer";
 
 interface Moment {
   id: number;
@@ -364,8 +366,12 @@ function Home() {
             />
           </div>
         </div>
+        <div className="py-16">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+        <VideoSection />
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative pt-16">
           {moments.map((moment, index) => (
             <div
               key={moment.id}
@@ -404,6 +410,8 @@ function Home() {
             </div>
           ))}
         </div>
+ <div className="py-16">  <Footer /></div>
+      
       </main>
     </div>
   );
