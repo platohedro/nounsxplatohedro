@@ -9,7 +9,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/1.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/1.mp4" 
               title="Video 1"
               controls
             ></video>
@@ -18,7 +18,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/4.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/2.mp4" 
               title="Video 1"
               controls
             ></video>
@@ -26,7 +26,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/2.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/3.mp4" 
               title="Video 1"
               controls
             ></video>
@@ -34,7 +34,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/3.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/4.mp4" 
               title="Video 1"
               controls
             ></video>
@@ -42,7 +42,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/5.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/5.mp4" 
               title="Video 1"
               controls
             ></video>
@@ -50,7 +50,7 @@ const VideoSection: React.FC = () => {
           <div className="aspect-[9/16]">
             <video
               className="w-full h-full rounded-lg shadow-lg object-cover"
-              src="/src/video/6.mp4" 
+              src="https://github.com/platohedro/nounsxplatohedro/raw/refs/heads/main/src/video/6.mp4" 
               title="Video 1"
               controls
             ></video>
