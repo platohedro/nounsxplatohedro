@@ -332,9 +332,7 @@ function Home() {
               emergentes. Acoplados a sus necesidades, características
               poblacionales y contextos, los espacios formativos han permitido
               vincular la exploración lúdica y ejercicios prácticos sobre finanzas
-              descentralizadas y Gobernanza en Comunidades. <br /><br />
-
-              El proceso de formación, en el que a la fecha se han desarrollado 4
+              descentralizadas y Gobernanza en Comunidades. <br /><br /> El proceso de formación, en el que a la fecha se han desarrollado 4
               talleres, ha requerido un trabajo constante de diálogo y
               articulación con líderes y lideresas del Faro, otros Colectivos de
               la ciudad, la Junta de Acción Comunal y sus habitantes. Generando de
@@ -343,19 +341,14 @@ function Home() {
               el arte y la tecnología desde la participación comunitaria hemos
               abierto y generado espacios de confianza, creatividad y colaboración
               en donde niños, niñas, jóvenes, madres y mujeres cabeza de hogar han
-              sido protagonistas.<br /><br />
-            
-             El proceso de formación ha requerido un trabajo
+              sido protagonistas.<br /><br /> El proceso de formación ha requerido un trabajo
             de constante diálogo y articulación con líderes del <b>Faro</b>, otros
             colectivos de la ciudad, la acción comunal y habitantes del
             territorio, garantizando que el conocimiento se comparta y expanda
             dentro del ecosistema comunitario. Un avance clave para fortalecer
             este proceso ha sido la instalación de <b>conexión a interneten la
             sede del Faro</b> , lo que permitirá dar continuidad a la formación y
-            explorar nuevas herramientas digitales en futuros encuentros.
-
-            <br /><br />
-            Adicionalmente, se ha continuado con mejoras en infraestructura,
+            explorar nuevas herramientas digitales en futuros encuentros.<br /><br /> Adicionalmente, se ha continuado con mejoras en infraestructura,
             incluyendo la adecuación del sistema de manejo de aguas lluvias y la
             compra de materiales para la pintura del mural comunitario, que se
             realizará una vez finalicen los trabajos de obra y la adecuación de
@@ -365,6 +358,10 @@ function Home() {
             `.replace(/\n/g, '<br>') }}
             />
           </div>
+          {/* Ejemplo de imagen centrada entre párrafos */}
+          <div className="flex justify-center my-8">
+                <img src="/src/img/34.jpg" alt="Descripción de la imagen" className="max-w-[40%] h-auto rounded-lg shadow-lg justify-center" />
+              </div>
         </div>
         <div className="py-16">
 
