@@ -32,7 +32,7 @@ const moments: Moment[] = [
     title: "Taller con niñas y niños de Matinée en el Faro",
     description: "Introducción lúdica al mundo de Nouns",
     image:
-      "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/1.jpg",
+      "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/1.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `A partir del grupo de 123 niños y niñas que conforman el grupo de Matinée del barrio El Faro, comuna 8 de Medellín, se llevó a cabo el día sábado 8 de febrero el taller # 1, que incluyó:
 
@@ -48,7 +48,7 @@ const moments: Moment[] = [
     id: 2,
     title: "Taller con niñas y niños de Matinée en Platohedro",
     description: "Exploración de dispositivos móviles y gobernanza descentralizada",
-    image: "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/2.jpg",
+    image: "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/2.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `Contando con la participación de (# de niños y niñas), se llevó a cabo el taller # 2 con los niños y niñas integrantes del grupo Matinée del barrio Buenos Aires, Comuna 9 de Medellín el día 15 de marzo. En este caso niños y niñas exploraron el uso de dispositivos móviles y tuvieron un acercamiento a los conceptos de Gobernanza descentralizada:
 
@@ -65,7 +65,7 @@ const moments: Moment[] = [
     title: "Taller con Amapolas (Mujeres jóvenes)",
     description: "Empoderamiento en finanzas descentralizadas",
     image:
-      "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/3.jpg",
+      "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/3.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `Con madres y mujeres cabezas de hogar de las comunas 8 y 9 de Medellín, llevamos a cabo el día 7 de febrero, un encuentro centrado en reconocer las finanzas descentralizadas e introducir a las participantes en los principales conceptos y formas de las comunidades descentralizadas:
 
@@ -82,7 +82,7 @@ const moments: Moment[] = [
     title: "Taller con Ideatorio (Adolescentes del Faro)",
     description: "Onboarding en Web3 para jóvenes",
     image:
-      "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/4.jpg",
+      "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/4.jpg",
     color: "bg-gradient-to-br from-red-500/90 to-red-600/90",
     content: `El día 14 de marzo nos reunimos con jóvenes y adolescentes del grupo Ideatorio del barrio El Faro, Comuna 8 de Medellín. Con este grupo generamos un proceso de introducción centrado en el recorrido histórico de las transformaciones que ha tenido el dinero, hasta llegar a las finanzas descentralizadas, abriendo paso para generar un proceso onboarding en Web3.
 
@@ -112,46 +112,46 @@ function DynamicMomentPage() {
   switch(moment.id) {
     case 1:
       galleryImages = [
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/1.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/2.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/3.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/4.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/5.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/6.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/7.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/8.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento1/9.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/1.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/2.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/3.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/4.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/5.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/6.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/7.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/8.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento1/9.jpg",
       ];
       break;
     case 2:
       galleryImages = [
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/1.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/2.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/3.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/4.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/5.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/6.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento2/7.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/1.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/2.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/3.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/4.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/5.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/6.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento2/7.jpg",
       ];
       break;
     case 3:
       galleryImages = [
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/1.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/2.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/3.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/4.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/5.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/13.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/12.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/11.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento3/10.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/1.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/2.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/3.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/4.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/5.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/13.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/12.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/11.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento3/10.jpg",
       ];
       break;
     case 4:
       galleryImages = [
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento4/1.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento4/2.jpg",
-        "https://github.com/platohedro/nounsxplatohedro/blob/main/src/img/momento4/3.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento4/1.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento4/2.jpg",
+        "https://raw.githubusercontent.com/platohedro/nounsxplatohedro/refs/heads/main/src/img/momento4/3.jpg",
    
       ];
       break;
