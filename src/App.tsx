@@ -325,8 +325,8 @@ function Home() {
                 __html: `En el marco del proyecto Nouns Amigos - Platohedro, transformando
               comunidades en El Faro, se han generado procesos de adecuación
               infraestructural de la Sede Comunitaria, articulación de actores
-              claves en el territorio y un proceso formativo centrado en Nouns,
-              Nouns Amigos y Web3, que vincula a niños, niñas, jóvenes, madres y
+              claves en el territorio y un proceso formativo centrado en <b>Nouns Amigos y web 3</b>,
+              , que vincula a niños, niñas, jóvenes, madres y
               mujeres cabeza de hogar, brindándoles nuevas herramientas y
               conocimientos para comprender e interactuar con las tecnologías
               emergentes. Acoplados a sus necesidades, características
@@ -346,12 +346,12 @@ function Home() {
               sido protagonistas.<br /><br />
             
              El proceso de formación ha requerido un trabajo
-            de constante diálogo y articulación con líderes del Faro, otros
+            de constante diálogo y articulación con líderes del <b>Faro</b>, otros
             colectivos de la ciudad, la acción comunal y habitantes del
             territorio, garantizando que el conocimiento se comparta y expanda
             dentro del ecosistema comunitario. Un avance clave para fortalecer
-            este proceso ha sido la instalación de conexión a internet en la
-            sede del Faro, lo que permitirá dar continuidad a la formación y
+            este proceso ha sido la instalación de <b>conexión a interneten la
+            sede del Faro</b> , lo que permitirá dar continuidad a la formación y
             explorar nuevas herramientas digitales en futuros encuentros.
 
             <br /><br />
@@ -370,8 +370,12 @@ function Home() {
 
         <VideoSection />
         </div>
-        
+         <h1 className="text-4xl md:text-5xl font-bold mb-4 theme-text force-black dark:force-white">
+          Sesiones formativas
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative pt-16">
+
+         
           {moments.map((moment, index) => (
             <div
               key={moment.id}
